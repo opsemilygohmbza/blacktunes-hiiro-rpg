@@ -1,43 +1,12 @@
 {
-  "name": "infinite-looping-highschool",
-  "version": "1.0.0",
-  "main": "src/main.js",
-  "scripts": {
-    "start": "chcp 65001 && electron .",
-    "dist": "node bin/encryption.js",
-    "build": "node bin/encryption.js && node bin/packager.js",
-    "build:steam": "cross-env STEAM=true node bin/encryption.js && node bin/packager.js",
-    "build:steam-dev": "cross-env NODE_ENV=development STEAM=true node bin/encryption.js && node bin/packager.js",
-    "build:test": "cross-env NODE_ENV=development node bin/encryption.js && node bin/packager.js",
-    "build:dev": "electron-packager src Dev --executableName=game --overwrite --icon=src/game/icon/icon.ico --out=build --ignore=\"(icu$)\""
-  },
-  "author": "Blacktunes",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blacktunes/hiiro-rpg.git"
-  },
-  "keywords": [
-    "rpgmakermv",
-    "electron"
-  ],
-  "bugs": {
-    "url": "https://github.com/blacktunes/hiiro-rpg/issues"
-  },
-  "homepage": "https://github.com/blacktunes/hiiro-rpg#readme",
-  "devDependencies": {
-    "@vue/devtools": "5.3.4",
-    "cross-env": "^7.0.3",
-    "electron": "18.0.3",
-    "@electron/packager": "^18.3.6",
-    "fs-extra": "^10.0.1",
-    "md5-js": "^0.0.3"
-  },
-  "prettier": {
-    "trailingComma": "none",
-    "singleQuote": true,
-    "semi": false,
-    "arrowParens": "avoid",
-    "bracketSpacing": true,
-    "printWidth": 100
-  }
+    "name": "rmmz-game",
+    "main": "index.html",
+    "chromium-args": "--force-color-profile=srgb",
+    "window": {
+        "title": "与你相遇的那天是轮回高校的日常这也是合理的吗？",
+        "width": 1024,
+        "height": 720,
+        "position": "center",
+        "icon": "icon/icon.png"
+    }
 }

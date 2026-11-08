@@ -1,8 +1,0 @@
-node_modules
-/dist
-/build
-/temp
-/src/icu
-/src/game/save
-
-steam_appid.txt
